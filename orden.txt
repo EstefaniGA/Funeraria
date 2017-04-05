@@ -1,0 +1,66 @@
+    <td>Fecha de la Orden </td>
+                     <td>Folio </td>
+                    <td>Sucursal </td>
+                    <!--Datos finado  -->
+                     <td> Nombre</td>
+                      <td>Apellido Paterno  </td>
+                      <td>Apellido Materno  </td>
+                      <td>Domicilio </td>
+                      <td>Ciudad </td>
+                      <td>Colonia </td>
+                      <td>Fecha de nacimiento </td>
+                      <td>Edad </td>
+                      <td>Sexo </td>
+                      <td>Nacionalidad </td>
+                      <td>Estado Civil </td>
+                      <td>Escolaridad </td>
+                      <td>Ocupación </td>
+                      <td>Derecho Habiente </td>
+                     <!-- datos solicitante -->
+                     <td> Nombre</td>
+                     <td>Apellido Paterno  </td>
+                     <td>Apellido Materno  </td>
+                     <td>Domicilio </td>
+                     <td>Número </td>
+                     <td>Parentesco </td>
+                     <td>Ciudad </td>
+                     <td>Colonia</td>
+                     <td>Teléfono </td>
+                     <td>Edad </td>
+                     <td>Estado Civil </td>
+                     <td>Persona que atendio </td>
+                     <!-- datos de la defuncion -->
+                     <td>Lugar de la defuncion</td>
+                     <td>Fecha de la defunción</td>
+                     <td>Hora de la defunción</td>
+                     <td>Causas de la defunción </td>
+                     <!-- datos velacion inhumacion y cremacion -->
+                     <td>Lugar de la veración </td>
+                     <td>Hora de la misa </td>
+                     <td>Fecha de la misa </td>
+                     <td>Iglesia </td>
+                     <td>Hora del sepelio </td>
+                     <td>Panteón </td>
+                     <td>Ubicación </td>
+                     <td>Perpetuidad </td>
+                     <td>Nombre del Finado a exhumar </td>
+                     <td>Apellido Paterno del Finado a exhumar </td>
+                     <td>Apellido Materno del Finado a exhumar </td>
+                     <td>Fecha de la defunción  </td>
+                     <!-- servicios que otorga la empresa -->
+                     <td>Ataud </td>
+                     <td>Modelo</td>
+                     <td>Urna</td>
+                     <td>Modelo</td>
+                     <td>Capillas</td>
+                     <td>A dommicilio</td>
+                     <td>Carroza</td>
+                     <td>Cremación</td>
+                     <td>Otros Gastos</td>
+                     <td>Lugar de la cremación </td>
+                     <td>Sub-Total</td>
+                     <td>Impuestos</td>
+                     <td>Certificado Médico</td>
+                     <td>Otros</td>
+                     <td>Observaciónes</td>
+                     <td>Total</td>
