@@ -331,7 +331,14 @@ $data['comu'] = $this->OrdenModel->selCom();
             $data['cont'] = 'abono';
             $data['su'] = $this->OrdenModel->sel();
             $data['nom'] = $this->session->userdata('nombre');
-            $idf = $this->input->post('identificador');
+            
+            if($this->input->post('identificador')){
+                $idf = $this->input->post('identificador');
+            }else{
+                $idf = $this->session->userdata('idf');
+            }
+            
+            
             $data['resultado'] = $this->AbonoModel->seleccionar($idf);
             $data['res'] = $this->AbonoModel->abonos($idf);
             $this->load->view('show', $data);

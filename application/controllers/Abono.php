@@ -9,11 +9,10 @@ class Abono extends CI_Controller {
         $this->load->model('AbonoModel');
         $this->load->model('OrdenModel');
     }
+    private $b=0;
 
     public function abono() {
-        //$this->form_validation->set_rules('folio', 'Folio', 'trim|required');
-        //$this->form_validation->set_rules('sucursal', 'Sucursal', 'trim');
-        //$this->form_validation->set_rules('fecha', 'Fecha', 'trim|required');
+        
         $this->form_validation->set_rules('abono', 'Abono', 'trim|required');
         $this->form_validation->set_rules('fore', 'Folio Resivo', 'trim|required');
         $this->form_validation->set_rules('saldo', 'saldo', 'trim|required');
@@ -24,18 +23,19 @@ class Abono extends CI_Controller {
             $abono = $this->input->post('abono');
             $fore = $this->input->post('fore');
             $saldo= $this->input->post('saldo');
-//            actualiza restante de tb orden
+            
+    
+                //            actualiza restante de tb orden
             $this->AbonoModel->ActualizarRestante($fol, $abono,$saldo);
 //            agregar abono
             $this->AbonoModel->agregarabono($fol, $sucu, $abono, $fore, $fech);
-            $data['tit'] = 'Abono';
-            $data['cont'] = 'abono';
-            $data['su'] = $this->OrdenModel->sel();
-            $data['nom'] = $this->session->userdata('nombre');
             
-            $data['resultado'] = $this->AbonoModel->seleccionar($fol);
-            $data['res'] = $this->AbonoModel->abonos($fol);
-            $this->load->view('show', $data);
+            $user_array = array(
+                    'idf' => $fol
+                );
+            $this->session->set_userdata($user_array);
+                
+            redirect('Show/abono');
         } else {
             redirect('Show/buscador');
         }
